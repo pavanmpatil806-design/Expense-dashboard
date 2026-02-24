@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>💰 Expensio</h2>
+    <ul>
+        <li class="active">Dashboard</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <h2>Dashboard</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Balance</h3>
+            <p id="balance">₹0</p>
+        </div>
+        <div class="card">
+            <h3>Total Income</h3>
+            <p id="income">₹0</p>
+        </div>
+        <div class="card">
+            <h3>Total Expense</h3>
+            <p id="expense">₹0</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h3>Add Transaction</h3>
+        <form id="form">
+            <input type="text" id="text" placeholder="Description" required>
+            <select id="category">
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>College</option>
+            </select>
+            <input type="number" id="amount" placeholder="Amount (+income, -expense)" required>
+            <button>Add</button>
+        </form>
+    </div>
+
+    <div class="chart-section">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <div class="table-section">
+        <h3>Recent Transactions</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
