@@ -13,13 +13,11 @@ A working expense tracking dashboard built using:
 - Category-based chart
 - LocalStorage support
 - Dashboard UI layout
-
-## 📸 Preview
-(Add screenshot here)
+- 
 
 ## 🔧 How to Run
 Open index.html in browser.
-
+https://pavanmpatil806-design.github.io/Expense-dashboard/
 ---
 
 Made by Pavan (2nd Sem CSE Student)
